@@ -184,7 +184,7 @@ p {
 
 
 .team {
-    margin: 100px 0;
+    margin: 100px 0 70px;
 }
 
 .team__inner {
@@ -195,7 +195,8 @@ p {
 
 .team__item {
     width: 25%;
-    padding:0 15px;
+    padding: 0 15px;
+    margin-bottom: 30px;
 }
 
 .team__photo {
@@ -211,15 +212,52 @@ p {
     color: #2d3033;
 }
 
-.team__prof{
+.team__prof {
     font-size: 13px;
     color: #e84545;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 
-.team__text{
+.team__text {
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.5;
     color: #6c7279;
+}
+
+
+/*social*/
+
+.social {
+    display: flex;
+}
+
+.social_item {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-right: 4px;
+    background-color: #fff;
+    border: 1px solid #e8ecee;
+    transition: background .1s linear;
+}
+
+.social_item:hover {
+    background-color: #e8ecee;
+}
+
+.social_item:hover .social__icon {
+    fill: #000;
+}
+
+
+.social__icon {
+    display: block;
+    height: 18px;
+    fill: #c6cacc;
+
+    transition: fill .1s linear;
 }
